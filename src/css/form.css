@@ -1,0 +1,62 @@
+/* Tasks */
+.create-task, .task-overview, .task-delete-all {
+    background-color: #353b41;
+    padding: 30px;
+    width: 72%;
+    position: relative;
+    margin: auto;
+    border-radius: 1rem;
+    border: 5px solid #5e5e5e;
+    top: 50px;
+}
+
+#tasks {
+    background-color: #212529;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 0.75rem;
+}
+
+.task-delete-all {
+    margin-top: 30px;
+}
+
+.task-overview {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+
+.button-position {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Scrollbar inside the task overview */
+.task-overview::-webkit-scrollbar {
+    width: 10px;
+}
+
+.task-overview::-webkit-scrollbar-thumb {
+    background-color: #efefef; 
+    border-radius: 10px;
+}
+
+/* Create task form */
+textarea {
+    max-height: 100px;
+}
+
+input[type="text"], textarea {
+    color: #ffffff !important;
+    border: none !important;
+    background-color: #212529 !important;
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+    .create-task, .task-overview, .task-delete-all {
+        width: 95%;
+    }
+}
